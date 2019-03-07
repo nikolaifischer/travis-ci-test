@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, AfterViewInit } from '@angular/core';
+import { SearchComponent } from './search/search.component';
+import { SearchService } from './search.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'dad-joke-generator';
+  joke = ' ';
+
+  constructor(private searchService: SearchService) {
+
+  }
+  onFinished(event: Event) {
+    console.log('On finished');
+    console.log(event);
+    this.joke = event['joke'];
+
+  }
+
 }
