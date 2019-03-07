@@ -8,7 +8,7 @@ import { SearchService } from '../search.service';
 })
 export class SearchComponent implements OnInit {
 
-  private searchTerm;
+  public searchTerm;
   public joke = '';
   @Output() finished = new EventEmitter();
   constructor(private searchService: SearchService) {

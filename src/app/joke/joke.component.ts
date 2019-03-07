@@ -8,7 +8,7 @@ import { DataService } from '../data.service';
 })
 export class JokeComponent implements OnInit {
 
-  @Input() private text: String;
+  @Input() text: String;
   constructor() { }
 
   ngOnInit() {
