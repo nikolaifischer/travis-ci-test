@@ -31,6 +31,6 @@ deploy:
     secure: "EcRdaychm8zs39xl4rCseRs3S+18MFL3JuaouvrVD1fpZZ+PCLT/wwxTBFFxX01bILUHcMODpgXH0tmfgrLpIFtleDZjhPpl5tO334/lJwO/y3zhM/FPArv6/YUZqjjawPKhws/nBVzYvLLJnGjmISH4oYgUUIgayEL7xW6BU68fuE49z3ybRO0pF3DNGmSBqxRgp5OETXRb3tZJBdmT7FVqZlnhmoTeFcJnNBisMCuFJCZ84oQUBJPTnqSgdbFnpLh1CQCyqU5MJ6KKdB1hX+M7s3zW8KiHR2wEGAy5Mj3werDEBuOBnhpphz3TrWT5xFrtPaJkMCFrs/8pGtGQhK1GljNQnjI4X3aVYVccdTMt+VaoEm8dpTk4lc9SdYUI3wWLSo19QN1/Co/D7dxRj7+FxKSLRs4MUcOJLm4K8f93Ev89Ez52EK/EPby0TDglcypOY2cRSGDpPP+uUA5jxIH74pB9E9b/tqo4eXee4uqt1lzDmOs8Vh+evYXweDKuEdVnuRhAb46j2mYmLAjVHzgkcAlTPIItVKQ8eQKVo7O9dmeEvpagMbTcCzztJYNhOlcBFUGZcut8q/NtqnunkhLobcZOy6iqkwTfAf7phctrZkYihYkvNc8gVav6ZV61iAkeNsbXFzVgMR8nhESHIt6bb6gWep2ahwil9mdEBMw="
   bucket: "travis-ci-test-bucket" # The Name of your Bucket
   skip_cleanup: true # Important! Avoids deleting your build files
-  local-dir: dist # The directory with your build files. Default for Angular CLI is 'dist'
+  local-dir: dist/dad-joke-generator # The directory with your build files. Default for Angular CLI is 'dist/your-app-name'
   region: eu-central-1 # The Region ID of your Bucket - Find the ID here https://docs.aws.amazon.com/de_de/AmazonRDS/latest/UserGuide/Concepts.RegionsAndAvailabilityZones.html
   acl: public_read # Tells travis to set AWS' ACL to allow public read. 
